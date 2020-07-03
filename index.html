@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <script defer src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="JS/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <h1>Hello blog</h1>
+    <form>
+        <fieldset class="post">
+            <legend>Create post</legend>
+            <input class="post__text" id="title" placeholder="title">
+            <input class="post__text" id="seo-url" placeholder="Seo url">
+            <input class="post__text" id="short-description" placeholder="Short description">
+            <textarea id="full-description" placeholder="Full description"></textarea>
+
+            <label>
+                <input id="status" type="checkbox">
+            </label>
+            <button type="button" id="send-post"  >Create</button>
+        </fieldset>
+    </form>
+    <table id="posts-lists" >
+
+    </table>
 </body>
+
 </html>
